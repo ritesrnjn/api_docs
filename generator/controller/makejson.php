@@ -56,7 +56,7 @@ class MakeJson extends Controller
                 'version' => '0.0.1',
                 'title' => 'MY REST API'
             ),
-            'host' => 'http://example.com',
+            'host' => 'example.com',
             'basePath' => '/appx_api',
             'schemes' => [
                 'http',

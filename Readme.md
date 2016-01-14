@@ -48,19 +48,23 @@ composer update
         'version' => '0.0.1',
         'title' => 'MY REST API'
     ),
-    'host' => 'http://example.com',
+    'host' => 'example.com',
     'basePath' => '/api_docs',
     'schemes' => [
         'http',
         'https'
     ],
     ```
-5. Generate JSON file
+5. Make storage folder writable. Browse to ```api_docs/generator```
+    ```
+    sudo chmod -R 777 storage
+    ```
+6. Generate JSON file
     ```
     example.com/api_docs/generator/makejson
     ```
 
-6. Add url to swagger-ui component ```api_docs/public/index.html Line:35```
+7. Add url to swagger-ui component ```api_docs/public/index.html Line:35```
     ```javascript
       if (url && url.length > 1) {
         url = decodeURIComponent(url[1]);
@@ -68,7 +72,7 @@ composer update
         url = "http://example.com/api_docs/generator/storage/appx.json";
       }
     ```
-7. All done!
+8. All done!
     * To add/update/delete api routes, browse: ```example.com/api_docs/generator```
     * To view/test api routes, browse: ``` example.com/api_docs/public```
 
