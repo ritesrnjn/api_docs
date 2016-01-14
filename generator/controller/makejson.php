@@ -54,9 +54,9 @@ class MakeJson extends Controller
             'swagger' => '2.0',
             'info' => array(
                 'version' => '0.0.1',
-                'title' => 'REST API'
+                'title' => 'MY REST API'
             ),
-            'host' => 'host Name',
+            'host' => 'http://example.com',
             'basePath' => '/appx_api',
             'schemes' => [
                 'http',

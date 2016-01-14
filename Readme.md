@@ -22,7 +22,7 @@ composer update
 
 
 ## Use
-1. Update Configuration file at ```api_docs/generator/config/config.php```
+1. Update Configuration file located at```api_docs/generator/config/config.php```
     ```php
     define('DB_DRIVER', 'mysql');
     define('DB_HOST', '127.0.0.1');
@@ -41,7 +41,21 @@ composer update
     example.com/api_docs/generator/seed
     ```
 
-4. Generate JSON file
+4. Edit 'host' in ```api_docs/generator/controller/makejson.php```
+    ```php
+    'swagger' => '2.0',
+    'info' => array(
+        'version' => '0.0.1',
+        'title' => 'MY REST API'
+    ),
+    'host' => 'http://example.com',
+    'basePath' => '/api_docs',
+    'schemes' => [
+        'http',
+        'https'
+    ],
+    ```
+5. Generate JSON file
     ```
     example.com/api_docs/generator/makejson
     ```
