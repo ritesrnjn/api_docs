@@ -48,13 +48,11 @@ composer update
 
 6. Add url to swagger-ui component ```api_docs/public/index.html Line:35```
     ```javascript
-    $(function () {
-          var url = window.location.search.match(/url=([^&]+)/);
-          if (url && url.length > 1) {
-            url = decodeURIComponent(url[1]);
-          } else {
-    		url = "http://your-domain/api_docs/generator/storage/appx.json";
-          }
+      if (url && url.length > 1) {
+        url = decodeURIComponent(url[1]);
+      } else {
+        url = "http://example.com/api_docs/generator/storage/appx.json";
+      }
     ```
 7. All done!
     * To add/update/delete api routes, browse: ```example.com/api_docs/generator```
