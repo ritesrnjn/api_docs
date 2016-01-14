@@ -22,7 +22,7 @@ composer update
 
 
 ## Use
-1. Update Configuration file at ```api_doc/generator/config/config.php```
+1. Update Configuration file at ```api_docs/generator/config/config.php```
     ```php
     define('DB_DRIVER', 'mysql');
     define('DB_HOST', '127.0.0.1');
