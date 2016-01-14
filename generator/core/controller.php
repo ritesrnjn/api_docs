@@ -19,12 +19,12 @@ class Controller
 
         $capsule->addConnection([
             'driver'    => DB_DRIVER,
-            'host'      => DB_HOST,
+            'host'      => '3306',
             'port'      => DB_PORT,
             'database'  => DB_NAME,
             'username'  => DB_USER,
             'password'  => DB_PASS,
-            'charset'   => DB_CHARSET,
+            'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,

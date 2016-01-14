@@ -1,33 +1,67 @@
-What is it?
------------
+# Swagger Docs
+
+
+## What is api_docs?
 This is an alternate to swagger editor and swagger-ui, to create api documentation. Instead of writing yaml codes,
 all you have to do is to fill a simple CRUD form.
 
-How to use?
------------
 
-1. Pull dependencies using composer
+## Requirements
 
-2. Update Configuration file -
-        http://your-domain/api_docs/generator/config/config.php
+  - PHP 5.3+
+  - MySQL
+  - mod_rewrite activated
 
-3. Migrate the database tables -
-        http://your-domain/api_docs/generator/api_docs/generator/migrate
 
-4.  Optional: Seed the tables -
-        http://your-domain/api_docs/generator/seed
+## Installation
+Pull dependencies using composer
 
-5. Create Json file -
-        http://your-domain/api_docs/generator/makejson
+```
+composer update
+```
 
-6. Add url to swagger-ui component -
-        http://your-domain/api_docs/public/index.html:35
 
-7. open documentation url -
-        http://your-domain/api_docs/public
+## Use
+1. Update Configuration file at ```api_doc/generator/config/config.php```
+    ```php
+    define('DB_DRIVER', 'mysql');
+    define('DB_HOST', '127.0.0.1');
+    define('DB_NAME', 'api_docs');
+    define('DB_USER', 'root');
+    define('DB_PASS', 'root');
+    ```
 
-Built using
------------
-1. swagger-ui
-2. illuminate/database
-3. php mini framework
+2. Migrate the database tables
+    ```
+    http://your-domain/api_docs/generator/api_docs/generator/migrate
+    ```
+
+3. *Optional:* Seed the tables
+    ```
+    http://your-domain/api_docs/generator/seed
+    ```
+
+4. Generate JSON file
+    ```
+    http://your-domain/api_docs/generator/makejson
+    ```
+
+6. Add url to swagger-ui component ```api_docs/public/index.html Line:35```
+    ```html
+    $(function () {
+          var url = window.location.search.match(/url=([^&]+)/);
+          if (url && url.length > 1) {
+            url = decodeURIComponent(url[1]);
+          } else {
+    		url = "http://your-domain/api_docs/generator/storage/appx.json";
+          }
+    ```
+7. All done!
+    * To add/update/delete api routes, browse: ```http://your-domain/api_docs/generator```
+    * To view/test api routes, browse: ``` http://your-domain/api_docs/public```
+
+
+## Built using
+1. [swagger-ui](https://github.com/swagger-api/swagger-ui)
+2. [illuminate/database](https://github.com/illuminate/database)
+3. [mini](https://github.com/panique/mini)
