@@ -1,7 +1,7 @@
 # Swagger Docs
 
 
-## What is api_docs?
+## What is swagger docs?
 This is an alternate to swagger editor and swagger-ui, to create api documentation. Instead of writing yaml codes,
 all you have to do is to fill a simple CRUD form.
 
@@ -33,21 +33,21 @@ composer update
 
 2. Migrate the database tables
     ```
-    http://your-domain/api_docs/generator/api_docs/generator/migrate
+    example.com/api_docs/generator/migrate
     ```
 
 3. *Optional:* Seed the tables
     ```
-    http://your-domain/api_docs/generator/seed
+    example.com/api_docs/generator/seed
     ```
 
 4. Generate JSON file
     ```
-    http://your-domain/api_docs/generator/makejson
+    example.com/api_docs/generator/makejson
     ```
 
 6. Add url to swagger-ui component ```api_docs/public/index.html Line:35```
-    ```html
+    ```javascript
     $(function () {
           var url = window.location.search.match(/url=([^&]+)/);
           if (url && url.length > 1) {
@@ -57,8 +57,8 @@ composer update
           }
     ```
 7. All done!
-    * To add/update/delete api routes, browse: ```http://your-domain/api_docs/generator```
-    * To view/test api routes, browse: ``` http://your-domain/api_docs/public```
+    * To add/update/delete api routes, browse: ```example.com/api_docs/generator```
+    * To view/test api routes, browse: ``` example.com/api_docs/public```
 
 
 ## Built using
