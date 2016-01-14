@@ -19,8 +19,8 @@ class Controller
 
         $capsule->addConnection([
             'driver'    => DB_DRIVER,
-            'host'      => '3306',
-            'port'      => DB_PORT,
+            'host'      => '127.0.0.1',
+            'port'      => '3306',
             'database'  => DB_NAME,
             'username'  => DB_USER,
             'password'  => DB_PASS,
