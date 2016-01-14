@@ -6,8 +6,7 @@ all you have to do is to fill a simple CRUD form.
 How to use?
 -----------
 
-1. Pull dependencies
-        composer update
+1. Pull dependencies using composer
 
 2. Update Configuration file -
         http://your-domain/api_docs/generator/config/config.php
