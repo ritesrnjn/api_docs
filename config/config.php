@@ -1,4 +1,9 @@
 <?php
+/**
+ * Login credentials for admin dashboard
+ */
+define('ADMIN_NAME', 'admin');
+define('ADMIN_PASS', 'admin');
 
 /**
  * Show errors while debugging

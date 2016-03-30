@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-12">
 
-			<h2>List of apis</h2>
+			<h2>List of APIs</h2>
 
 			<a href="<?php echo URL; ?>/create" class="btn btn-primary">Add New</a>
 <p>&nbsp;</p>

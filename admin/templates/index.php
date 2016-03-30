@@ -15,7 +15,7 @@
                     <a href="<?php echo URL; ?>/makejson">Refresh Json File</a>
                 </li>
                 <li>
-                    <a href="#"> Update app details </a>
+                    <a href="#"> Update API details </a>
                 </li>
             </ul>
 

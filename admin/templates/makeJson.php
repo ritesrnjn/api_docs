@@ -7,7 +7,7 @@
                 Json file created successfully.
             </div>
 
-            <h4>List of Paths</h4>
+            <h4>List of APIs</h4>
             <code>
                 <?php echo $updatedPaths; ?>
             </code>

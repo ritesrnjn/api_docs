@@ -1,6 +1,6 @@
 <?php
 if(session_status() == PHP_SESSION_NONE) session_start();
-require 'login/settings.php';
+require 'config/config.php';
 
 require 'login/authenticate.php';
 require 'login/header.php';
