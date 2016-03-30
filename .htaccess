@@ -1,0 +1,4 @@
+<Files "users.sqlite3">
+Order Allow,Deny
+Deny from all
+</Files>

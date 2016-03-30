@@ -8,9 +8,8 @@ all you have to do is to fill a simple CRUD form.
 
 ## Requirements
 
-  - PHP 5.3+
-  - MySQL
-  - mod_rewrite activated
+  - PHP >= 5.5.9
+  - SQLite extension activated / MySql
 
 
 ## Installation

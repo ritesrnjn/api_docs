@@ -1,7 +1,3 @@
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
-
-/vendor
+.idea/
+vendor/
+composer.lock

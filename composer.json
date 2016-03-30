@@ -1,10 +1,22 @@
 {
+    "name": "Api docs",
+    "description": "generates api documentation",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ritesh Ranjan",
+            "email": "ritesrnjn@gmail.com"
+        }
+    ],
     "require": {
-        "illuminate/database": "^5.1"
+        "illuminate/database": "^5.2",
+        "twbs/bootstrap": "^3.3",
+        "components/jquery": "^2.2"
     },
     "autoload":{
         "classmap":[
-            "generator/model"
+            "admin/model"
         ]
     }
 }
