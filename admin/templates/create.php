@@ -70,8 +70,8 @@
                             <td>
                                 <label>In</label>
                                 <select type="text" class="small"  name="BX_IN[]">
-                                    <option>FormData</option>
-                                    <option>Path</option>
+                                    <option>query</option>
+                                    <option>path</option>
                                 </select>
                             </td>
                             <td>

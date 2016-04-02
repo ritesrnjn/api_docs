@@ -44,11 +44,11 @@ class Application
                     $this->url_controller->index();
                 }
                 else {
-                    header('location: ' . URL . '/error');
+                    header('location: ' . URL . '/not_found');
                 }
             }
         } else {
-            header('location: ' . URL . '/error');
+            header('location: ' . URL . '/not_found');
         }
     }
 

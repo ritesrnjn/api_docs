@@ -69,8 +69,8 @@
                                     <td>
                                         <label for="BX_IN">In</label>
                                         <select type="text" class="small"  name="BX_IN[]">
-                                            <option <?php if($param->in == "formData"){echo "selected"; } ?>>FormData</option>
-                                            <option <?php if($param->in == "path"){echo "selected"; } ?>>Path</option>
+                                            <option <?php if($param->in == "query"){echo "selected"; } ?>>query</option>
+                                            <option <?php if($param->in == "path"){echo "selected"; } ?>>path</option>
                                         </select>
                                     </td>
                                     <td>
@@ -109,8 +109,8 @@
                                         <td>
                                             <label for="BX_IN">In</label>
                                             <select type="text" class="small"  name="BX_IN[]">
-                                                <option>FormData</option>
-                                                <option>Path</option>
+                                                <option>query</option>
+                                                <option>path</option>
                                             </select>
                                         </td>
                                         <td>
